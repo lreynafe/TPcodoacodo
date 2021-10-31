@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../img/butacas.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.contenedor {
+    background: cornsilk;
+    border-radius: 2px;
+    box-shadow: 19px 20px 8px -9px rgba(0,0,0,0.6);
+    overflow: hidden;
+    width: 90uv;
+    max-width: 100%;
+    display:flex;
+    border-radius: 15px;
+}
+.cabecera {
+    background:rgba(134,71,71);
+    color:azure;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 20px 40px;
+    width: 40%;
+}
+#formulario {
+    padding: 30px 20px;
+}
+
+.form-control {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: 600px;
+    color: #864747;   
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 0.1px solid;
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;   
+    color: #864747; 
+}
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: green;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: red;
+}
+
+#formulario button {
+    background: #864747;
+    border:1px solid black;
+    border-radius: 2px;
+    color: #f6f6e9;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color:red;
+}

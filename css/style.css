@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navegador{
+    background-image: url("../img/bgnav.webp");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.title{
+    color:cornsilk
+}
+
+@media scren and (min-width: 52em){
+    .navegador{
+        max-width: 52em;
+    }
+}
+
+.menu-simple{
+
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0, 0%, 15%);
+    height: fit-content;
+    color: honeydew;
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+    color: ivory;
+    padding: .6em 1em;
+}
+
+.menu li a:hover{
+    background: hsl(0, 0%, 25%);
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu li{
+    flex: 1 0;
+    text-align: center;
+}
+
+.banner{
+    background-image: url("../img/fachada.jpg");
+    height:100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding: 1vw;
+}
+
+.recuadro{
+
+    left: 10%;
+    top: 10%;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    margin:auto;
+}
+
+.recuadro h1{
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.recuadro p{
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.bannerbt{
+    margin: 15px;
+    position: relative;
+}
+
+.bannerbt a{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.bannerbt a:hover{
+    background-color: grey;
+    color: #000;
+}
+
+.bannerbt1{
+    opacity: 0;
+    animation: keyframes_aparecerDesdeArriba 1s; 
+    -webkit-animation: keyframes_aparecerDesdeArriba 1s;
+    animation-fill-mode: forwards;
+}
+
+.bannerbt2{
+    opacity: 0;
+    animation: keyframes_aparecerDesdeArriba 1s; 
+    -webkit-animation: keyframes_aparecerDesdeArriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.bannerbt3{
+    opacity: 0;
+    animation: keyframes_aparecerDesdeArriba 1s; 
+    -webkit-animation: keyframes_aparecerDesdeArriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.imgcv img{
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.bggral{
+    background-image: url("../img/rcmh.jpg");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.recuadro2{
+    left: 3%;
+    top: 3%;
+    padding: 20px;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    margin:auto;
+}
+
+.titulo2 h1{
+    text-align: center;
+    font-style: bold;
+}
+
+.titulo2 h3{
+    text-align: center;
+}
+
+.protocolo{
+    text-align: justify;
+}
+
+.recuadro3{
+    left: 3%;
+    top: 3%;
+    padding: 20px;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    margin:auto;
+}
+
+.titulo3 h1{
+    text-align: center;
+    font-style: bold;
+}
+
+.titulo3 h3{
+    text-align: center;
+}
+
+.titulo3 h6{
+    text-align: center;
+}
+
+.garancond{
+    text-align: justify;
+}
+
+.imggaran img{
+    width: 50%;
+    height: auto;
+    float: center;
+}
+
+.direccion{
+    padding-left: 2%;
+    color: ivory;
+}
+
+footer{
+    background-color: hsl(0, 0%, 15%);
+    padding: 1%;
+}
+
+.redes{
+    color: ivory; 
+    text-align: center;
+}
+
+.mapa{
+    color: ivory;
+    padding: 1vw;
+    padding-right: 3vw;
+}
+
+.portada{
+    background-image: url("../img/cort.jpg");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding: 1vw;
+}
+
+.bannersala{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: #ffffff;
+    margin:auto;   
+}
+
+.escen img{
+    width: 98%;
+    height: auto;
+    float: center;
+}
+
+.disenosa2 img{
+    width: 98%;
+    height: auto;
+    float: center;
+}
+.disenosa img{
+    width: 98%;
+    height: auto;
+    float: center;
+}
+
+.plato1 img{
+    width: auto;
+    height: 95%;
+    float: center;
+}
+.plato2 img{
+    width: auto;
+    height: 95%;
+    float: center;
+}
+.plato3 img{
+    width: auto;
+    height: 95%;
+    float: center;
+}
+.plato4 img{
+    width: auto;
+    height: 95%;
+    float: center;
+}
+.plato5 img{
+    width: auto;
+    height: 95%;
+    float: center;
+}
+.plato6 img{
+    width: auto;
+    height: 95%;
+    float: center;
+}
+.iluminacion{
+    text-align: center;
+}
+
+.bannerilu{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: #ffffff;
+    margin:auto;   
+}
+
+.luces img{
+    width: 98%;
+    height: auto;
+    float: center;
+}
+
+.consola img{
+    width: 98%;
+    height: auto;
+    float: center;  
+}
+
+.sonido{
+    background-image: url("../img/sonido.jpg");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding: 7px;
+}
+
+.bannersonido{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: #ffffff;
+    margin:auto;   
+}
+
+.iluminacion{
+    background-image: url("../img/iluminacion.jpg");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding: 7px;
+}
+
+.banneriluminacion{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: #ffffff;
+    margin:auto;   
+}
+
+.gastro{
+    background-image: url("../img/restaurantes.jpg");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding: 7px;
+}
+
+.bannergastro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: #ffffff;
+    margin:auto;   
+}
+
+.agendatitle{
+    background-color: black;
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 16px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cuerpoagenda{
+    background-image: url("../img/recital.png");
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding: 7px;
+}
+.pilotsrecuadro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin:auto; 
+}
+.pilotsrecuadro img{
+    width: 95%;
+    height: auto;
+    float: center;
+}
+.balletrecuadro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin:auto; 
+}
+.balletrecuadro img{
+    width: 95%;
+    height: auto;
+    float: center;
+}
+.operarecuadro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin:auto; 
+}
+.operarecuadro img{
+    width: 95%;
+    height: auto;
+    float: center;
+}
+.orquestarecuadro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin:auto; 
+}
+.orquestarecuadro img{
+    width: 95%;
+    height: auto;
+    float: center;
+}
+.gospelrecuadro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin:auto; 
+}
+.gospelrecuadro img{
+    width: 95%;
+    height: auto;
+    float: center;
+}
+.navidadrecuadro{
+    left: 5%;
+    top: 5%;
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin:auto; 
+}
+.navidadrecuadro img{
+    width: 95%;
+    height: auto;
+    float: center;
+}
+
+.adquieretickets{
+    left: 10%;
+    top: 10%;
+
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border: 1px;
+    border-color: rgb(117, 63, 63);
+    border-radius: 10px;
+    background-color: rgba(134, 71, 71);
+    color: #ffffff;
+    margin:auto;
+}
+
+.botontickets{
+    background: #f1b1b1;
+    border:1px solid black;
+    border-radius: 2px;
+    color: #f6f6e9;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.tickets{
+    background-color: black;
+    height: 100uh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 16px;
+    color: whitesmoke;
+    text-align: center;
+}
